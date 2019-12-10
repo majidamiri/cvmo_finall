@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+{% extends 'user/base.html' %}
+{% load static %}
+{% load i18n %}
+{% block title %}
+    {% trans "Register" %}
+{% endblock %}
+{% block css %}
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-minimal@3/minimal.css">
+
+{% endblock %}
+{% block content %}
+
+    <section class="ImageBackground ImageBackground--gray v-align-parent u-height200 js-minusHeader" style="height:10px !important">
+
+    </section>
+
+
+
+    <div class="container u-MarginTop100 u-xs-MarginTop30 u-MarginBottom100 u-xs-MarginBottom30">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="u-BoxShadow40 u-Padding30 u-xs-MarginBottom30 u-sm-MarginBottom30">
+                    <div class="col-md-12">
+                        <h2 class="u-xs-FontSize40 u-Weight300 u-MarginTop50 u-xs-MarginTop0 u-MarginBottom15">Sign In</h2>
+                        <p class="u-LineHeight2 u-MarginBottom50">Enter your information below to sign in</p>
+                    </div>
+                    <form>
+                        <div class="col-md-12 u-MarginBottom100 u-xs-MarginBottom0">
+                            <div class="form-group">
+                                <input type="text" name="username" class="form-control username_login" placeholder="Phone number">
+                            </div>
+
+                            <div class="form-group">
+                                <input type="password" name="password" class="form-control password_login" placeholder="Password">
+                            </div>
+
+
+                            <div class="form-group">
+                                <a href="#" class="pull-left u-MarginTop15 text-muted u-MarginRight10">Forgot Password ?</a>
+                                <button type="submit" class="btn btn-primary pull-right signInButt">Sign In</button>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="u-PaddingLeft30 u-xs-PaddingLeft0">
+                    <div class="col-md-12">
+                        <h2 class="u-xs-FontSize40 u-Weight300 u-MarginTop0 u-MarginBottom15">
+                            {% trans "Create New Account" %}
+                            {% get_current_language as LANG %}
+                            {{LANG}}
+                        </h2>
+                        <p class="u-LineHeight2 u-MarginBottom50">Don't have an account. Please create your account</p>
+                    </div>
+                    <form id="register_form">
+                        {% csrf_token %}
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <input type="text" name="username"  class="form-control username_f" placeholder="phone number">
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+
+                            <div class="form-group">
+                                <input type="password" name="password" class="form-control password_f" placeholder="New Password">
+                            </div>
+
+                            <div class="form-group">
+                                <input type="password" name="confirm_password" class="form-control password_f2" placeholder="Re-Enter Password">
+                            </div>
+
+                            <div class="form-group">
+                                <select name='type' class="type_f form-control">
+                                    <option value="user">user</option>
+                                    <option value="client">client</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group ">
+
+
+                                <button type="" class="registerBtn btn btn-dark pull-right pull-left--xs u-xs-MarginTop20">Register Now</button>
+                                <br>
+                                <button style="margin-top :10px" type="" class="registerBtnAgain btn btn-dark pull-right pull-left--xs u-xs-MarginTop20">validate phone number</button>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <hr/>
+    </div>
+
+
+{% endblock %}
+
+{% block js %}
+
+    <script src="{% static '/assets/js/register.js' %}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9/dist/sweetalert2.min.js"></script>
+{% endblock %}

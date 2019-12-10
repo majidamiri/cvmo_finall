@@ -1,0 +1,95 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-12-10 13:10+0330\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: todos/models.py:11 userprofile/models.py:18
+msgid "Name"
+msgstr ""
+
+#: todos/models.py:12 userprofile/models.py:21
+msgid "Done"
+msgstr ""
+
+#: todos/models.py:13 userprofile/models.py:22
+msgid "Date Created"
+msgstr ""
+
+#: todos/models.py:16
+msgid "Todo"
+msgstr ""
+
+#: todos/models.py:17
+msgid "Todos"
+msgstr ""
+
+#: userprofile/models.py:19
+msgid "Family"
+msgstr ""
+
+#: userprofile/models.py:20
+msgid "Father Name"
+msgstr ""
+
+#: userprofile/models.py:25
+msgid "FreeLancer"
+msgstr ""
+
+#: userprofile/models.py:26
+msgid "FreeLancers"
+msgstr ""
+
+#: users/serializers.py:30
+msgid "User account is disabled."
+msgstr ""
+
+#: users/serializers.py:31
+msgid "Unable to login with provided credentials."
+msgstr " Unable to login with provided credentials. "
+
+#: users/templates/user/base.html:109
+msgid "Register"
+msgstr "ثبت‌نام"
+
+#: users/templates/user/login.html:52
+msgid "Create New Account"
+msgstr "ثبت‌نام "
+
+#: users/templates/user/main.html:4
+msgid "CVMO"
+msgstr "سایت استخدام در بهترین شرکت های ایران"
+
+#: users/templates/user/main.html:12
+msgid "Calm down dude, Just Do It"
+msgstr "مدیر بخش طراحی رولز رویس و بی ام و به تیم فولکس واگن پیوست "
+
+#: users/templates/user/main.html:13
+msgid "And if you go, I wanna go with you"
+msgstr ""
+"جوزف کابان مدیر اسبق طراحی شرکت خودروسازی رولز رویس، اشکودا و بی ام و ، به "
+"تازگی به عنوان مدیر بخش طراحی بدنه تیم فولکس واگن معرفی شد. جوزف کابان "
+"اسلواکیایی از سال 2017 تا اوایل 2019 مدیر طراحی شرکت بی ام و بود و پس از آن "
+"به شرکت رولز رویس پیوست. این طراح مطرح از اول جولای 2020 همکاری خود با فولکس "
+"واگن را آغاز خواهد کرد."
+
+#: users/templates/user/main.html:15
+msgid "Client"
+msgstr "کارفرما"
+
+#: users/templates/user/main.html:16
+msgid "Freelancer"
+msgstr "کارجو"

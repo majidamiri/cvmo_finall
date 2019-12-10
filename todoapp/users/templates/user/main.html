@@ -1,0 +1,25 @@
+{% extends 'user/base.html' %}کارجو
+{% load static i18n %}
+{% block title %}
+    {% trans "CVMO" %}
+{% endblock %}
+{% block content %}
+    <section class="ImageBackground ImageBackground--overlay ImageBackground--overlay--gradient js-FullHeight js-Parallax" data-overlay="8">
+        <div class="container u-MarginTop150 u-xs-MarginTop30 u-MarginBottom150 u-xs-MarginBottom30">
+
+            <div class="row">
+                <div class="col-md-12 text-center u-MarginBottom150 u-xs-MarginBottom30">
+                    <h1 class="u-MarginTop10">{% trans "Calm down dude, Just Do It" %}</h1>
+                    <p class="h5 u-Opacity40">{% trans "And if you go, I wanna go with you" %} </p>
+                    <div class="Shortcode-button u-MarginTop70">
+                        <a href="/users_registration" class="btn btn-primary"> {% trans "Client" %} </a>
+                        <a href="/users_registration" class="btn btn-info"> {%  trans "Freelancer" %} </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+{% endblock %}
